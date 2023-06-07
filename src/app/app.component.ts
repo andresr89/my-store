@@ -18,8 +18,12 @@ export class AppComponent {
     name:'andres',
     age: 33,
     avatar:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy2WjdhMiqnUiCACM2rVHhgMbASutf8639bw&usqp=CAU',
-
   }
+
+  names: string[]= ['Andres','lizamar','salome']
+  newName =""
+
+   
    toggleButton(){
     this.btnDisabled = !this.btnDisabled;
    }
@@ -42,8 +46,14 @@ export class AppComponent {
       const element = event.target as HTMLInputElement;
       this.person.name = element.value;
     }
-    
-  
+   
+    addName(){
+      this.names.push(this.newName);
+      this.newName = '';
+    }
+
+    deleteName(index: number) {
+     this.names.splice(index,1);
 }
 
-
+}
