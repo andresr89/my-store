@@ -10,8 +10,9 @@ import { ActivationStart } from '@angular/router';
 export class AppComponent {
   name = 'tuto';
   age = 33;
-  img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy2WjdhMiqnUiCACM2rVHhgMbASutf8639bw&usqp=CAU';
+  img = 'https://ehttps://img.freepik.com/vector-premium/nueva-notificacion_585024-45.jpgncrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy2WjdhMiqnUiCACM2rVHhgMbASutf8639bw&usqp=CAU';
   img2= 'https://skinsdefortnite.com/wp-content/uploads/2022/04/Skin-Jill-Valentine.png';
+  img3='https://img.freepik.com/vector-premium/nueva-notificacion_585024-45.jpg'
   btnDisabled = true;
   
   person ={
