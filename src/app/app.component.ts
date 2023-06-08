@@ -1,6 +1,7 @@
 import { Expansion } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { ActivationStart } from '@angular/router';
+import {product}from'./product.model';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { ActivationStart } from '@angular/router';
 export class AppComponent {
   name = 'tuto';
   age = 33;
-  img = 'https://ehttps://img.freepik.com/vector-premium/nueva-notificacion_585024-45.jpgncrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy2WjdhMiqnUiCACM2rVHhgMbASutf8639bw&usqp=CAU';
+  img = 'https://progameguides.com/wp-content/uploads/2023/03/fortnite-outfit-Leon-S-Kennedy.jpg?fit=875%2C915';
   img2= 'https://skinsdefortnite.com/wp-content/uploads/2022/04/Skin-Jill-Valentine.png';
   img3='https://img.freepik.com/vector-premium/nueva-notificacion_585024-45.jpg'
   btnDisabled = true;
@@ -23,6 +24,29 @@ export class AppComponent {
 
   names: string[]= ['Andres','lizamar','salome']
   newName =""
+  products: product[]=[
+    {
+      name: 'empanadas',
+      price: 1000,
+      image:'./assets/images/empanadas.jpg',
+      category: 'food',
+    },
+    {
+      name: 'pizza',
+      price: 20000,
+      image:'./assets/images/pizza.jpg'
+    },
+    {
+      name: 'ramen',
+      price: 15000,
+      image:'./assets/images/ramen.jpg'
+    },{
+      name: 'tacos',
+      price: 18000,
+      image:'./assets/images/tacos.jpg'
+    },
+  ]
+
 
    
    toggleButton(){
