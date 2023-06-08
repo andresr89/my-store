@@ -1,9 +1,20 @@
+<h1>*ngForObjs</h1>
+<div>
+  <div *ngFor="let product of products">
+    <img width="250"[src]="product.image" alt="image" alt="image">
+    <h2>{{product.price}}</h2>
+    <p>{{product.name}}</p>
+  </div>
+</div>
+
+
+<hr/>
 <h1>*ngFor</h1>
 <input type="text"required [(ngModel)]="newName"/>
 <button (click)="addName()">Add name</button>
 
 <ul>
-  <li *ngIf="names.length === 0"><img src="{{img3}}" alt="image" width='220' height='230'></li>
+  <li *ngIf="names.length === 0"><img src="{{img3}}" alt="Image"width='220' height='230'></li>
   <li *ngFor="let name of names;index as i">
     {{i}}{{name}}
     <button (click)="deleteName(i)">Delete</button>
@@ -12,7 +23,7 @@
 
 <h1>ngIf</h1>
 <input type="text"required [(ngModel)]="person.name"/>
-<p *ngIf="person.name ==='andres'"><img src="{{img}}" alt="Image"/></p>
+<p *ngIf="person.name ==='andres'"><img src="{{img}}" alt="Image"width='220' height='230'/></p>
 <p *ngIf="person.name ==='lizamar' && person.age===33;else myBlock"><img src="{{img2}}" alt="Image"width='220' height='230'/></p>
 
 <ng-template #myBlock>
@@ -56,5 +67,5 @@
 <h2>{{'hola Mundo'.repeat(5)}}</h2>
 <p>4 + 4 = {{4 + 4}}</p>
 <h3>Hola, soy {{name}} y tengo {{age}}</h3>
-<img src="{{img}}" alt="image">
+<img src="{{img}}" alt="image"width='220' height='230'>
 <img src="{{img2}}" alt="image" width='220' height='230'>
