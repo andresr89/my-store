@@ -29,7 +29,7 @@ export class AppComponent {
       name: 'empanadas',
       price: 1000,
       image:'./assets/images/empanadas.jpg',
-      category: 'food',
+      category: 'food'
     },
     {
       name: 'pizza',
