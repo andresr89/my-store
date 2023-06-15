@@ -6,9 +6,10 @@ import {product}from'./product.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  widthImg = 10;
   name = 'tuto';
   age = 33;
   img = 'https://progameguides.com/wp-content/uploads/2023/03/fortnite-outfit-Leon-S-Kennedy.jpg?fit=875%2C915';
