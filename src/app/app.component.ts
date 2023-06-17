@@ -14,8 +14,15 @@ export class AppComponent {
   age = 33;
   img = 'https://progameguides.com/wp-content/uploads/2023/03/fortnite-outfit-Leon-S-Kennedy.jpg?fit=875%2C915';
   img2= 'https://skinsdefortnite.com/wp-content/uploads/2022/04/Skin-Jill-Valentine.png';
-  img3='https://img.freepik.com/vector-premium/nueva-notificacion_585024-45.jpg'
+  img3='https://img.freepik.com/vector-premium/nueva-notificacion_585024-45.jpg';
+  img4='https://www.shutterstock.com/image-vector/ladybug-ladybird-vector-graphic-illustration-600w-1040847991.jpg'
   btnDisabled = true;
+  register ={
+    name:'',
+    email:'',
+    password:'',
+
+  }
   
   person ={
     name:'andres',
@@ -86,5 +93,8 @@ export class AppComponent {
     deleteName(index: number) {
      this.names.splice(index,1);
 }
-
+   
+   onRegister(){
+   console.log (this.register);
+   }
 }

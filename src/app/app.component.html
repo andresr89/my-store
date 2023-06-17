@@ -1,3 +1,35 @@
+
+<h1>Formulario Nuevo</h1>
+<form (ngSubmit)="onRegister()" #myForm="ngForm">
+  <div class="input-group">
+    <label for="name">Nombre</label>
+    <input type="text" name="name"  required id="name" [(ngModel)]="register.name">
+    <p>
+      Mensaje de error
+    </p>
+  </div>
+
+  <div class="input-group">
+    <label for="email">Email</label>
+    <input type="text" name="email"  required id="email" [(ngModel)]="register.email">
+    <p>
+      Mensaje de error
+    </p>
+  </div>
+
+  <div class="input-group">
+    <label for="pasword">Password</label>
+    <input type="password" name="password"  required id="password" [(ngModel)]="register.password">
+    <p>
+      Mensaje de error
+    </p>
+  </div>
+    <button [disabled]="myForm.invalid" type="submit">Registrar</button>
+    <button type="button">Acion</button>
+</form>
+
+<hr/>
+
 <h1>NgClass & NgStyle</h1>
 <input type="text" required #nameInput4= "ngModel"[(ngModel)]="person.name" />
 <hr class="line-error"
@@ -101,7 +133,7 @@
 <input type="text"required [(ngModel)]="person.name"/>
 <p *ngIf="person.name ==='andres'"><img src="{{img}}" alt="Image"width='220' height='230'/></p>
 <p *ngIf="person.name ==='lizamar' && person.age===33;else myBlock"><img src="{{img2}}" alt="Image"width='220' height='230'/></p>
-
+<p *ngIf="person.name ==='freddy'"><img src="{{img4}}" alt="Image"width='220' height='230'/></p>
 <ng-template #myBlock>
  <p>vacio</p>
 </ng-template>
